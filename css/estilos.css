@@ -1,0 +1,64 @@
+table{
+	margin: 0 auto;
+}
+
+table caption, .tabla2 caption, .tabla3 caption, .tabla4 caption{
+	/*Tamaño de la fuente*/
+	font-size: 32px;
+	/*Estilo de la fuente*/
+	font-style: italic;
+	/*Grosor de la fuente*/
+	font-weight: bold;
+	/*Relleno de las Celdas*/
+	padding: 20px;
+}
+
+td{
+	/*Alinear el Texto*/
+	text-align: center;
+}
+
+.tabla2{
+	/*Borde de la tabla2*/
+	border: 1px solid #E43552;
+	/*Permite eliminar el espaciado entre celdas, el otro valor
+	de la propiedad es el separate por defecto*/
+	border-collapse: collapse;
+}
+.tabla2 td, .tabla2 th{
+	/*Permite definir un borde punteado para la tabla 2*/
+	border: 1px dotted #E43552;
+	padding: 20px;
+}
+/*Pseudoclases permite para las filas impares definir
+un color de fondo*/
+.tabla2 tr:nth-child(2n+1){
+	background: #220BFD;
+}
+/*Para las filas pares*/
+.tabla2 tr:nth-child(2n){
+	background: #CCC;
+}
+.tabla3 td, .tabla3 th{
+	/*Permite definir un borde de linea interrumpida para la tabla 3*/
+	border: 2px dashed #F1401D;
+	/*Relleno de Celdas*/
+	padding: 20px;
+}
+.tabla3 tr:first-child{
+	/*Permite establecer el fondo para la ultima fila de la tabla*/
+	background: #EEEFFF;
+}
+.tabla4{
+	background: #FBFBFB;
+}
+.tabla4 td, .tabla4 th{
+	/*Borde para las celdas la tabla 4*/
+	border: 5px solid #34FA1C;
+	/*Fondo para las celdas de la tabla 4*/
+
+}
+.tabla4 tr:hover{
+	/*Permite establecer el color de fondo al pasar el mouse sobre la fila de la tabla*/
+	background: #FF2CCF
+}
